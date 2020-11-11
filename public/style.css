@@ -1,0 +1,104 @@
+* {
+    --c1: rgb(26, 26, 26);
+    --c2: rgb(240, 240, 240);
+    --c3: rgb(194, 34, 34);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--c1);
+}
+
+.main {
+    position: absolute;
+    background-color: var(--c2);
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    top: 0;
+}
+
+#Board {
+    position: absolute;
+    background-color: var(--c1);
+    border-collapse: collapse;
+    width: 60vh;
+    height: 60vh;
+    left: calc(50% - 30vh);
+    bottom: 10vh;
+}
+
+#Board td {
+    width: 30%;
+    height: 30%;
+    border: 10px solid var(--c1);
+    background-color: var(--c2);
+    text-align: center;
+    font-size: 13vh;
+}
+
+#Title {
+    color: var(--c1);
+    font-size: 10vh;
+    text-align: center;
+    margin-top: 3vw;
+}
+
+#Message {
+    color: var(--c1);
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+#Info1 {
+    position: absolute;
+    width: calc(40vw - 30vh);
+    height: 100%;
+    background-color: var(--c2);
+    color: var(--c1);
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: auto;
+    font-size: 5vh;
+}
+
+#Warning {
+    color: var(--c3);
+    font-size: 2.5vh;
+    text-align: center;
+    margin-top: 69.5vh;
+}
+
+#Modal {
+    z-index: 2;
+    position: absolute;
+    top: 20vh;
+    left: calc(50% - 35vh);
+    display: block;
+    width: 70vh;
+    height: 70vh;
+    outline: 10px solid var(--c2);
+    background-color: var(--c1);
+    color: var(--c2);
+    text-align: center;
+    font-size: 6vh;
+}
+
+#Loading {
+    position: absolute;
+    border: 5vh solid var(--c1);
+    border-left: 5vh solid var(--c2);
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+    top: 32vh;
+    left: 20vh;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

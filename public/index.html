@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- include links to the firebase elements I plan to use -->
+        <script src="/__/firebase/8.0.1/firebase-app.js"></script>
+        <script src="/__/firebase/8.0.1/firebase-auth.js"></script>
+        <script src="/__/firebase/8.0.1/firebase-database.js"></script>
+    </head>
+    <body>
+        <div id="Modal">
+            <h1 id="ModalTitle">Loading...</h1>
+            <p id="ModalBody" style="font-size: 4vh;"></p>
+            <div id="Loading"></div>
+        </div>
+        <div class="main">
+            <div id="Title">Tic-Tac-Toe</div>
+            <div id="Message">Waiting for another player...</div>
+            <div id="Info1"></div>
+            <table id="Board">
+            </table>
+            <div id="Warning"></div>
+        </div>
+    </body>
+    <script src="backend.js"></script>
+    <script src="game.js"></script>
+</html>
